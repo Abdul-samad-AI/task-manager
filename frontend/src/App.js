@@ -3,7 +3,7 @@ import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
 import ProfilePage from "./pages/ProfilePage";
 import Navbar from "./components/Navbar";
-import TestApi from "./components/TestApi";
+
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<LoginPage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/test-api" element={<TestApi />} />
+        
       </Routes>
     </>
   );
