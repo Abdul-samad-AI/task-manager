@@ -1,59 +1,60 @@
-import React from "react";
+import { useState } from "react";
 import axios from "axios";
 
-const TestApi = () => {
+const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  // TASK 1: GET REQUEST
-  const fetchPosts = async () => {
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleLogin = async () => {
+    setLoading(true);
+    setError("");
+
     try {
-      const res = await axios.get(
-        "https://jsonplaceholder.typicode.com/posts"
+      const response = await axios.post(
+        "https://reqres.in/api/login",
+        {
+          email,
+          password
+        }
       );
-      console.log("First 5 posts:", res.data.slice(0, 5));
+
+      console.log("Login Success:", response.data);
+      // token will be used later
     } catch (err) {
-      console.error(err);
+      setError("Invalid email or password");
+    } finally {
+      setLoading(false);
     }
   };
 
-  // TASK 2 + 3: POST + ERROR
-  const handleLogin = async () => {
-  try {
-    const res = await axios.post(
-      "https://reqres.in/api/login",
-      {
-        email: "eve.holt@reqres.in",
-        password: "wrongpassword"
-      }
-    );
-    console.log("Token:", res.data.token);
-  } catch (error) {
-    if (error.response) {
-      console.log("Status:", error.response.status);
-      console.log("Error:", error.response.data);
-    } else if (error.request) {
-      console.log("Request sent but no response received");
-    } else {
-      console.log("Error:", error.message);
-    }
-  }
-};
-
   return (
     <div>
-      <h2>API Practice</h2>
+      <h2>Login</h2>
 
-      <button onClick={fetchPosts}>
-        Fetch Posts
+      <input
+        type="email"
+        placeholder="Email"
+        value={email}
+        onChange={e => setEmail(e.target.value)}
+      />
+
+      <input
+        type="password"
+        placeholder="Password"
+        value={password}
+        onChange={e => setPassword(e.target.value)}
+      />
+
+      <button onClick={handleLogin} disabled={loading}>
+        {loading ? "Logging in..." : "Login"}
       </button>
 
-      <br /><br />
-
-      <button onClick={handleLogin}>
-        Login Test
-      </button>
-      <button onClick={() => console.log("Button clicked")}>Fetch Posts</button>
+      {error && <p style={{ color: "red" }}>{error}</p>}
     </div>
   );
 };
 
-export default TestApi;
+export default Login;
