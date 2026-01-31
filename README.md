@@ -38,4 +38,4 @@ task-manager/
 ---
 
 ## Project Status
-🚧 In Progress – Project setup and foundation completed.
+In Progress – Project setup and foundation completed.
