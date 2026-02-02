@@ -1,51 +1,58 @@
 ---
 
-# 📝 Task Manager App
-
-### Full Stack Web Application (Frontend – Phase 1)
+````md
+# 📝 Task Manager App  
+### Full Stack Web Application — Frontend Phase (Day 3 Complete)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/github/explore/main/topics/react/react.png" width="70" />
-  <img src="https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png" width="70" />
-  <img src="https://raw.githubusercontent.com/github/explore/main/topics/axios/axios.png" width="70" />
-  <img src="https://raw.githubusercontent.com/github/explore/main/topics/api/api.png" width="70" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="60"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="60"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="60"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="60"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="60"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Frontend%20Completed-success"/>
+  <img src="https://img.shields.io/badge/Backend-Coming%20Next-blue"/>
+  <img src="https://img.shields.io/badge/Made%20With-React-informational"/>
 </p>
 
 ---
 
 ## 🚀 Project Overview
 
-The **Task Manager App** is a full-stack web application being developed in **phases**, following **industry-standard engineering practices**.
+**Task Manager App** is a full-stack web application being developed **step-by-step**, following real **industry workflows** instead of rushing features.
 
-This repository currently represents **Phase 1 – Frontend Foundation**, where the focus is on:
+This repository currently represents **Phase 1 — Frontend Foundation**, where the focus is on:
 
-* Real API communication
-* Professional React state handling
-* Production-ready UI behavior
+- Real API communication
+- Professional React state management
+- Production-ready UI behavior
 
-> 🔧 **Backend (Django REST API) will be integrated in the next phase.**
-
----
-
-## 🎯 Current Phase: Frontend API Integration (Completed till Day 3)
-
-In this phase, the application demonstrates how a real frontend communicates with a backend using APIs.
-
-### ✅ What’s Implemented
-
-✔ Login UI with controlled inputs
-✔ API call using Axios (`POST` request)
-✔ Proper handling of loading state
-✔ Error handling without UI crash
-✔ Clean async/await pattern
-✔ Button disabling during API calls
-✔ Console-verified success response
-
-This reflects **real-world frontend engineering**, not tutorial-level code.
+> ⚠️ Backend (Django REST API) will be integrated in the **next phase**
 
 ---
 
-## 🧠 Core Concept Demonstrated
+## 🎯 Current Phase: Frontend API Integration (Day 3)
+
+This phase demonstrates how a **real frontend application communicates with APIs** and handles real-world edge cases.
+
+### ✅ Features Implemented
+
+✔ Login UI with controlled inputs  
+✔ API calls using Axios (`POST`)  
+✔ Loading state with button disabling  
+✔ Error handling without UI crashes  
+✔ Clean `async/await` pattern  
+✔ Console-verified success responses  
+✔ Scalable component structure  
+
+> This is **not tutorial-level code** — it reflects how frontend engineers work in real projects.
+
+---
+
+## 🧠 Core Architecture Demonstrated
 
 ```text
 Browser (React)
@@ -58,45 +65,46 @@ JSON Response
    ↓
 React State Update
    ↓
-UI Feedback (Success / Error)
-```
+User Feedback (Success / Error)
+````
 
-This exact flow will later be reused with a **Django backend**.
+This same architecture will be reused with a **Django backend**.
 
 ---
 
 ## 🖥️ Tech Stack (Current Phase)
 
-* **React.js**
-* **JavaScript (ES6+)**
-* **Axios**
-* **HTML5**
-* **CSS3**
-* **Git & GitHub**
+| Category        | Technologies      |
+| --------------- | ----------------- |
+| Frontend        | React.js          |
+| Language        | JavaScript (ES6+) |
+| API Client      | Axios             |
+| Styling         | HTML5, CSS3       |
+| Version Control | Git & GitHub      |
 
 ---
 
 ## 🔐 Login Flow (Frontend)
 
-* User enters email & password
-* Axios sends a POST request
-* Loading indicator is shown
-* Button is disabled during request
-* API response is handled safely
-* UI never crashes on failure
+1. User enters email & password
+2. Axios sends POST request
+3. Loading indicator appears
+4. Button is disabled during request
+5. API response handled safely
+6. UI updates without crashing
 
-> 🔹 A dummy API is currently used **only to demonstrate frontend logic**
-> 🔹 This will be replaced with a **Django authentication API**
+> 🔹 Dummy API used only to demonstrate frontend logic
+> 🔹 Will be replaced by Django authentication API
 
 ---
 
 ## 📸 UI Preview (Sample)
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/674621/171798702-bfdc99b6-0c7b-4c5b-9e6c-6c1c1b8e48aa.png" width="650" />
+  <img src="https://user-images.githubusercontent.com/674621/171798702-bfdc99b6-0c7b-4c5b-9e6c-6c1c1b8e48aa.png" width="650"/>
 </p>
 
-*(Image for representation purposes – UI styling will evolve)*
+<sub>*UI will evolve further once backend is connected*</sub>
 
 ---
 
@@ -113,8 +121,7 @@ src/
 
 ---
 
-<<<<<<< HEAD
-## 🧪 How to Run Locally
+## 🧪 Run Locally
 
 ```bash
 npm install
@@ -131,13 +138,11 @@ http://localhost:3000
 
 ## 📌 What Recruiters Should Notice
 
-* Uses **real API call patterns**
-* Handles **loading and error states professionally**
-* Clean separation of logic and UI
-* Scalable structure ready for backend
-* Built step-by-step with clear learning progression
-
-This project is intentionally developed **phase-wise** to reflect **real software development workflows**.
+* Uses **real API interaction patterns**
+* Handles loading & error states professionally
+* Clean separation of UI and logic
+* Scalable structure for backend integration
+* Built phase-by-phase like real software teams
 
 ---
 
@@ -158,17 +163,16 @@ This project is intentionally developed **phase-wise** to reflect **real softwar
 B.Tech (AI / ML)
 Aspiring Full Stack Developer
 
-🔗 GitHub: *add your GitHub profile link here*
+🔗 GitHub: [https://github.com/Abdul-samad-AI](https://github.com/Abdul-samad-AI)
 
 ---
 
 ## ⭐ Final Note
 
-This repository focuses on **quality fundamentals** rather than rushing features.
-Each phase is built with **job-readiness and scalability** in mind.
+This project prioritizes **strong fundamentals and real-world practices** over rushing features.
+
+Each phase is intentionally designed to reflect **job-ready full-stack development**.
+
+````
 
 ---
-=======
-## Project Status
-In Progress – Project setup and foundation completed.
->>>>>>> c69db3df703d50a48e9d461dcb2f0ac33d605d84
