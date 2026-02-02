@@ -1,6 +1,5 @@
 ---
 
-````md
 # 📝 Task Manager App  
 ### Full Stack Web Application — Frontend Phase (Day 3 Complete)
 
