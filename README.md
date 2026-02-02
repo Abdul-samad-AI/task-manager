@@ -113,6 +113,7 @@ src/
 
 ---
 
+<<<<<<< HEAD
 ## 🧪 How to Run Locally
 
 ```bash
@@ -167,3 +168,7 @@ This repository focuses on **quality fundamentals** rather than rushing features
 Each phase is built with **job-readiness and scalability** in mind.
 
 ---
+=======
+## Project Status
+In Progress – Project setup and foundation completed.
+>>>>>>> c69db3df703d50a48e9d461dcb2f0ac33d605d84
